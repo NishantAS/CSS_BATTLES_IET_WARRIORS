@@ -1,0 +1,71 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ffe6b3;
+}
+
+.pizza-slice {
+    position: relative;
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 200px solid #ffcc00;
+    border-radius: 50px 50px 0 0;
+}
+
+.crust {
+    position: absolute;
+    bottom: -15px;
+    left: -105px;
+    width: 210px;
+    height: 30px;
+    background-color: #c68c53;
+    border-radius: 50%;
+}
+
+.cheese {
+    position: relative;
+    width: 200px;
+    height: 190px;
+    top: -190px;
+    left: -100px;
+    background-color: #ffcc00;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.pepperoni {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #d9534f;
+    border-radius: 50%;
+    top: 40px;
+    left: 40px;
+}
+
+.pepperoni-2 {
+    top: 100px;
+    left: 120px;
+}
+
+.olive {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.olive-1 {
+    top: 80px;
+    left: 70px;
+}
+
+.olive-2 {
+    top: 130px;
+    left: 40px;
+}

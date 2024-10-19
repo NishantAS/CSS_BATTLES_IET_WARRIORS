@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 100%;
+    width: 70vw;
+    height: 40vh;
+    background-color: #00a9d9;
+    /* Light blue background */
+    position: relative;
+}
+
+.shape {
+    height: 70%;
+    background-color: #004f6e;
+    /* Dark blue shape */
+    border-top-left-radius: 0%;
+    border-bottom-left-radius: 0%;
+    grid-column: 1 / 2;
+    /* Occupies the first grid column */
+}
+
+.shape::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #004f6e;
+    border-radius: 0%;
+    bottom: 30%;
+    left: 30%;
+    /* Adjust the position inside the container */
+}
