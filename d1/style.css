@@ -28,6 +28,15 @@ body {
     /* Occupies the first grid column */
 }
 
+.shapem {
+    height: 70%;
+    width: 70%;
+    ;
+    border-top-left-radius: 0%;
+    border-bottom-left-radius: 0%;
+    grid-row: 3/ 4;
+}
+
 .shape::before {
     content: "";
     position: absolute;
@@ -36,6 +45,18 @@ body {
     background-color: #004f6e;
     border-radius: 0%;
     bottom: 30%;
-    left: 30%;
-    /* Adjust the position inside the container */
+    left: 27%;
+    border-radius: 50%;
+}
+
+.shapem::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #004f6e;
+    border-radius: 0%;
+    bottom: 10%;
+    left: 20%;
+    border-radius: 50%;
 }
